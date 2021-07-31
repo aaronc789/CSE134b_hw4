@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>JavaScript addEventListener() alert</h2>
+
+    <button id="alertBtn">Alert</button>
+
+    <script>
+        document.getElementById("alertBtn").addEventListener("click", function () {
+            alert("Alert Pressed!");
+        });
+    </script>
+
+
+    <h2>JavaScript addEventListener() confirm</h2>
+
+    <button id="confirmBtn">Confirm</button>
+
+    <p id="confirmDemo"></p>
+
+    <script>
+        document.getElementById("confirmBtn").addEventListener("click", function () {
+            var txt;
+            var r = confirm("Do you confirm this?");
+            if (r == true) {
+                txt = "Confirm result: true";
+            }
+            else {
+                txt = "Confirm result: false";
+            }
+            document.getElementById("confirmDemo").innerHTML = txt;
+        });
+    </script>
+
+
+    <h2>JavaScript addEventListener() prompt</h2>
+
+    <button onclick="myFunction()">Prompt</button>
+
+    <p id="promptDemo"></p>
+
+    <script>
+        function myFunction() {
+            var name = prompt("What is your name?");
+            if (name != null) {
+                document.getElementById("promptDemo").innerHTML =
+                    "Prompt Result: " + name;
+            }
+        }
+    </script>
+
+    <h2>JavaScript addEventListener() saferPrompt</h2>
+
+    <button onclick="myPromptFunction()">Safer Prompt</button>
+
+    <p id="saferPromptDemo"></p>
+
+    <script>
+        function myPromptFunction() {
+            var name = prompt("What is your name?");
+            if (name != null) {
+                document.getElementById("saferPromptDemo").innerHTML =
+                    "Prompt Result: " + name;
+            }
+        }
+    </script>
+</body>
+
+</html>
