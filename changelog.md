@@ -1,4 +1,3 @@
-# The changes I made to my portfolio website were adding a confirm button for when a user wants to message me on my "contact me" page and is submitting a form, and it will confirm
-# with the user if they are sure they want to submit the form.
+# The changes I made to my portfolio website were adding a confirm button for when a user wants to message me on my "contact me" page and is submitting a form, and it will confirm with the user if they are sure they want to submit the form. If they say no, it will cancel the submission and return the user back to the page, with the form will be cleared. If they say yes, the information will be sent and the form will be cleared.
 
-# Another change I implemented was when the user clicks on my photo, it will sent out an alert that sends out a little message describing who I am.
+# Another change I implemented was when the user clicks on my photo, it will send out an alert that sends out a little message describing who I am and where the photo was taken.
